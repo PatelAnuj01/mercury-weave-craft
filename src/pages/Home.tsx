@@ -15,7 +15,7 @@ import {
   Clock,
 } from "lucide-react";
 
-import Video from  '../assests/back.mp4';
+import Video from "../assests/back.mp4";
 
 const stats = [
   { label: "Annual Production", value: "8,400", unit: "tonnes", icon: Factory },
@@ -37,7 +37,8 @@ const features = [
   {
     icon: Leaf,
     title: "Sustainable Manufacturing",
-    description: "Committed to zero waste water, zero carbon, and eco-friendly processes.",
+    description:
+      "Committed to zero waste water, zero carbon, and eco-friendly processes.",
   },
   {
     icon: Award,
@@ -84,7 +85,9 @@ export default function Home() {
 
           <AnimatedSection animation="fade-in-up" delay={400}>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed text-white drop-shadow-[0_1px_3px_white]">
-              Leading textile manufacturer with 21+ years of excellence in sustainable fabric production, serving global fashion brands with innovation and quality.
+              Leading textile manufacturer with 21+ years of excellence in
+              sustainable fabric production, serving global fashion brands with
+              innovation and quality.
             </p>
           </AnimatedSection>
 
@@ -116,38 +119,47 @@ export default function Home() {
 
       {/* Company Introduction Section */}
       <section className="py-24 bg-[#f9f9f9] text-[#333]">
-  <div className="max-w-6xl mx-auto px-4">
-    <AnimatedSection animation="fade-in-up">
-      <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-xl border border-gray-200 p-10 md:p-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#2c2c2c] text-center mb-6">
-          A Legacy of Innovation & Quality
-        </h2>
-        <p className="text-lg md:text-xl leading-relaxed text-gray-700 max-w-4xl mx-auto text-center">
-          Founded in 2003, Mercury Fabrics has grown into one of India’s largest knitted fabric
-          manufacturers, delivering world-class quality to global fashion brands. Named after
-          the Roman god of commerce and its Hindu counterpart Budh, the brand was built on a
-          foundation of strategic vision and excellence.
-          <br /><br />
-          With a state-of-the-art, vertically integrated facility in Bawal, Haryana—equipped
-          with advanced machinery from Italy, Japan, Germany, and more—Mercury produces over
-          8,400 tons of fabric annually, generating nearly $40 million USD in revenue.
-          <br /><br />
-          Mercury’s strategic location enables fast distribution and superior lead times, while
-          its R&D lab, approved by top global brands, continuously drives innovation.
-          <br /><br />
-          Over the years, Mercury has built trusted relationships with leading names like H&M,
-          Uniqlo, M&S, Puma, Armani Exchange, Benetton, DKNY, and many more, spanning regions
-          from South Asia to Southeast Asia.
-          <br /><br />
-          Our strength lies in our 1,000+ dedicated employees, lean manufacturing practices,
-          and a strong commitment to sustainability. All fabrics are produced using raw
-          materials from GOTS and OEKO-TEX certified suppliers, ensuring quality, safety, and
-          eco-responsibility.
-        </p>
-      </div>
-    </AnimatedSection>
-  </div>
-</section>
+        <div className="max-w-6xl mx-auto px-4">
+          <AnimatedSection animation="fade-in-up">
+            <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-xl border border-gray-200 p-10 md:p-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#2c2c2c] text-center mb-6">
+                A Legacy of Innovation & Quality
+              </h2>
+              <p className="text-lg md:text-xl leading-relaxed text-gray-700 max-w-4xl mx-auto text-center">
+                Founded in 2003, Mercury Fabrics has grown into one of India’s
+                largest knitted fabric manufacturers, delivering world-class
+                quality to global fashion brands. Named after the Roman god of
+                commerce and its Hindu counterpart Budh, the brand was built on
+                a foundation of strategic vision and excellence.
+                <br />
+                <br />
+                With a state-of-the-art, vertically integrated facility in
+                Bawal, Haryana—equipped with advanced machinery from Italy,
+                Japan, Germany, and more—Mercury produces over 8,400 tons of
+                fabric annually, generating nearly $40 million USD in revenue.
+                <br />
+                <br />
+                Mercury’s strategic location enables fast distribution and
+                superior lead times, while its R&D lab, approved by top global
+                brands, continuously drives innovation.
+                <br />
+                <br />
+                Over the years, Mercury has built trusted relationships with
+                leading names like H&M, Uniqlo, M&S, Puma, Armani Exchange,
+                Benetton, DKNY, and many more, spanning regions from South Asia
+                to Southeast Asia.
+                <br />
+                <br />
+                Our strength lies in our 1,000+ dedicated employees, lean
+                manufacturing practices, and a strong commitment to
+                sustainability. All fabrics are produced using raw materials
+                from GOTS and OEKO-TEX certified suppliers, ensuring quality,
+                safety, and eco-responsibility.
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
 
       {/* Features Section */}
       <section className="py-20 bg-gradient-subtle">
@@ -158,7 +170,8 @@ export default function Home() {
                 Why Choose Mercury Fabrics?
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Combining traditional craftsmanship with modern innovation for superior results
+                Combining traditional craftsmanship with modern innovation for
+                superior results
               </p>
             </div>
           </AnimatedSection>
@@ -177,7 +190,10 @@ export default function Home() {
                       <div className="flex items-start space-x-4">
                         <div className="flex-shrink-0">
                           <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-secondary rounded-xl">
-                            <Icon size={24} className="text-secondary-foreground" />
+                            <Icon
+                              size={24}
+                              className="text-secondary-foreground"
+                            />
                           </div>
                         </div>
                         <div>
@@ -214,12 +230,20 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
             {clients.map((client, index) => (
-              <AnimatedSection key={client.name} animation="fade-in" delay={index * 100}>
+              <AnimatedSection
+                key={client.name}
+                animation="fade-in"
+                delay={index * 100}
+              >
                 <div className="text-center p-6 hover:scale-105 transition-transform duration-300">
                   <div className="w-20 h-20 bg-gradient-subtle rounded-2xl flex items-center justify-center mx-auto border border-border shadow-soft">
-                    <span className="font-bold text-lg text-primary">{client.logo}</span>
+                    <span className="font-bold text-lg text-primary">
+                      {client.logo}
+                    </span>
                   </div>
-                  <p className="text-sm text-muted-foreground mt-2">{client.name}</p>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    {client.name}
+                  </p>
                 </div>
               </AnimatedSection>
             ))}
