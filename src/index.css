@@ -6,69 +6,69 @@
 
 @layer base {
   :root {
-    /* Base Colors - Warm Light Theme */
-    --background: 30 15% 97%;
-    --foreground: 25 15% 25%;
+    /* Base Colors - AI Theme */
+    --background: 220 25% 98%;
+    --foreground: 224 20% 20%;
 
     /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 25 15% 25%;
+    --card-foreground: 224 20% 20%;
 
     /* Popover System */
     --popover: 0 0% 100%;
-    --popover-foreground: 25 15% 25%;
+    --popover-foreground: 224 20% 20%;
 
-    /* Primary Brand Colors - Rich Terracotta */
-    --primary: 15 65% 60%;
+    /* Primary Brand Colors - Electric Blue */
+    --primary: 210 100% 56%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 15 65% 70%;
-    --primary-dark: 15 65% 50%;
+    --primary-light: 210 100% 70%;
+    --primary-dark: 210 100% 45%;
 
-    /* Secondary Colors - Warm Sage */
-    --secondary: 85 25% 70%;
-    --secondary-foreground: 85 25% 25%;
-    --secondary-accent: 85 25% 80%;
+    /* Secondary Colors - Deep Neural Blue */
+    --secondary: 224 64% 33%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-accent: 224 64% 50%;
 
-    /* Muted Tones - Linen Beige */
-    --muted: 40 20% 92%;
-    --muted-foreground: 25 15% 55%;
+    /* Muted Tones */
+    --muted: 220 15% 94%;
+    --muted-foreground: 224 15% 50%;
 
-    /* Accent Colors - Deep Forest */
-    --accent: 140 30% 45%;
-    --accent-foreground: 0 0% 100%;
-    --accent-soft: 140 30% 90%;
+    /* Accent Colors - Neon Cyan */
+    --accent: 180 100% 50%;
+    --accent-foreground: 224 20% 20%;
+    --accent-soft: 180 100% 95%;
 
-    /* Success & Trust Colors */
-    --success: 85 35% 55%;
+    /* Success & Trust Colors - AI Green */
+    --success: 120 100% 40%;
     --success-foreground: 0 0% 100%;
 
-    /* Warning & Attention - Golden Yellow */
-    --warning: 45 85% 65%;
-    --warning-foreground: 25 15% 25%;
+    /* Warning & Attention - Neural Orange */
+    --warning: 35 100% 60%;
+    --warning-foreground: 224 20% 20%;
 
-    /* Destructive - Muted Red */
-    --destructive: 0 45% 65%;
+    /* Destructive - Error Red */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Border & Input - Cotton White */
-    --border: 40 15% 88%;
-    --input: 40 15% 95%;
-    --ring: 15 65% 60%;
+    /* Border & Input */
+    --border: 220 15% 90%;
+    --input: 220 15% 96%;
+    --ring: 210 100% 56%;
 
-    /* Textile-Inspired Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(15 65% 60%), hsl(25 55% 55%));
-    --gradient-secondary: linear-gradient(135deg, hsl(85 25% 70%), hsl(40 20% 85%));
-    --gradient-accent: linear-gradient(135deg, hsl(140 30% 45%), hsl(85 25% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(15 65% 60%) 0%, hsl(85 25% 70%) 50%, hsl(140 30% 45%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(30 15% 97%) 0%, hsl(40 20% 95%) 100%);
-    --gradient-navbar: linear-gradient(90deg, hsl(40 25% 95%) 0%, hsl(30 15% 97%) 100%);
+    /* AI-Inspired Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 56%), hsl(224 64% 33%));
+    --gradient-secondary: linear-gradient(135deg, hsl(224 64% 33%), hsl(180 100% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(180 100% 50%), hsl(210 100% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 56%) 0%, hsl(180 100% 50%) 50%, hsl(224 64% 33%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 25% 98%) 0%, hsl(220 15% 96%) 100%);
+    --gradient-navbar: linear-gradient(90deg, hsl(210 100% 56%) 0%, hsl(224 64% 33%) 100%);
 
-    /* Soft, Textile Shadows */
-    --shadow-soft: 0 2px 15px hsl(25 15% 25% / 0.06);
-    --shadow-medium: 0 5px 25px hsl(25 15% 25% / 0.10);
-    --shadow-strong: 0 10px 40px hsl(25 15% 25% / 0.12);
-    --shadow-accent: 0 5px 20px hsl(15 65% 60% / 0.20);
-    --shadow-glow: 0 0 25px hsl(15 65% 60% / 0.15);
+    /* Tech Shadows */
+    --shadow-soft: 0 4px 20px hsl(210 100% 56% / 0.08);
+    --shadow-medium: 0 8px 30px hsl(210 100% 56% / 0.15);
+    --shadow-strong: 0 15px 50px hsl(210 100% 56% / 0.20);
+    --shadow-accent: 0 8px 25px hsl(180 100% 50% / 0.25);
+    --shadow-glow: 0 0 40px hsl(210 100% 56% / 0.3);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
