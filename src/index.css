@@ -7,68 +7,68 @@
 @layer base {
   :root {
     /* Base Colors - Light Theme */
-    --background: 210 20% 98%;
-    --foreground: 215 25% 15%;
+    --background: 0 0% 99%;
+    --foreground: 220 9% 46%;
 
     /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 220 9% 46%;
 
     /* Popover System */
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 220 9% 46%;
 
-    /* Primary Brand Colors - Modern Teal */
-    --primary: 174 72% 56%;
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 174 72% 70%;
-    --primary-dark: 174 72% 45%;
+    /* Primary Brand Colors - Soft Blue */
+    --primary: 210 40% 85%;
+    --primary-foreground: 220 14% 25%;
+    --primary-light: 210 40% 90%;
+    --primary-dark: 210 40% 75%;
 
-    /* Secondary Colors - Deep Ocean Blue */
-    --secondary: 201 79% 46%;
-    --secondary-foreground: 0 0% 100%;
-    --secondary-accent: 201 79% 60%;
+    /* Secondary Colors - Light Gray */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 14% 25%;
+    --secondary-accent: 220 14% 90%;
 
     /* Muted Tones */
-    --muted: 210 15% 93%;
-    --muted-foreground: 215 15% 50%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 60%;
 
-    /* Accent Colors - Vibrant Orange */
-    --accent: 25 95% 63%;
-    --accent-foreground: 0 0% 100%;
-    --accent-soft: 25 95% 92%;
+    /* Accent Colors - Soft Green */
+    --accent: 142 30% 85%;
+    --accent-foreground: 220 14% 25%;
+    --accent-soft: 142 30% 95%;
 
     /* Success & Trust Colors */
-    --success: 142 71% 45%;
-    --success-foreground: 0 0% 100%;
+    --success: 142 30% 75%;
+    --success-foreground: 220 14% 25%;
 
     /* Warning & Attention */
-    --warning: 43 96% 56%;
-    --warning-foreground: 43 25% 15%;
+    --warning: 45 70% 80%;
+    --warning-foreground: 220 14% 25%;
 
     /* Destructive */
-    --destructive: 0 75% 55%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 50% 80%;
+    --destructive-foreground: 220 14% 25%;
 
     /* Border & Input */
-    --border: 215 20% 88%;
-    --input: 215 20% 88%;
-    --ring: 174 72% 56%;
+    --border: 220 14% 92%;
+    --input: 220 14% 95%;
+    --ring: 210 40% 85%;
 
-    /* Modern Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(174 72% 56%), hsl(201 79% 46%));
-    --gradient-secondary: linear-gradient(135deg, hsl(201 79% 46%), hsl(174 72% 70%));
-    --gradient-accent: linear-gradient(135deg, hsl(25 95% 63%), hsl(174 72% 56%));
-    --gradient-hero: linear-gradient(135deg, hsl(174 72% 56%) 0%, hsl(25 95% 63%) 50%, hsl(201 79% 46%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(210 15% 96%) 100%);
-    --gradient-navbar: linear-gradient(90deg, hsl(174 72% 56%) 0%, hsl(201 79% 46%) 100%);
+    /* Simple Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 40% 85%), hsl(210 40% 90%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220 14% 96%), hsl(220 14% 90%));
+    --gradient-accent: linear-gradient(135deg, hsl(142 30% 85%), hsl(142 30% 90%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 40% 85%) 0%, hsl(142 30% 85%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 99%) 0%, hsl(220 14% 98%) 100%);
+    --gradient-navbar: linear-gradient(90deg, hsl(0 0% 100%) 0%, hsl(220 14% 98%) 100%);
 
-    /* Enhanced Shadows */
-    --shadow-soft: 0 4px 20px hsl(174 72% 56% / 0.08);
-    --shadow-medium: 0 8px 30px hsl(174 72% 56% / 0.15);
-    --shadow-strong: 0 15px 50px hsl(174 72% 56% / 0.20);
-    --shadow-accent: 0 8px 25px hsl(25 95% 63% / 0.25);
-    --shadow-glow: 0 0 40px hsl(174 72% 56% / 0.3);
+    /* Soft Shadows */
+    --shadow-soft: 0 2px 10px hsl(220 9% 46% / 0.05);
+    --shadow-medium: 0 4px 20px hsl(220 9% 46% / 0.08);
+    --shadow-strong: 0 8px 30px hsl(220 9% 46% / 0.10);
+    --shadow-accent: 0 4px 15px hsl(142 30% 75% / 0.15);
+    --shadow-glow: 0 0 20px hsl(210 40% 85% / 0.2);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
