@@ -7,66 +7,68 @@
 @layer base {
   :root {
     /* Base Colors - Light Theme */
-    --background: 210 20% 98%;
-    --foreground: 215 25% 27%;
+    --background: 220 15% 97%;
+    --foreground: 225 35% 15%;
 
     /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --card-foreground: 225 35% 15%;
 
     /* Popover System */
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover-foreground: 225 35% 15%;
 
-    /* Primary Brand Colors - Professional Blue */
-    --primary: 215 85% 45%;
+    /* Primary Brand Colors - Modern Purple */
+    --primary: 258 90% 66%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 215 85% 60%;
-    --primary-dark: 215 85% 35%;
+    --primary-light: 258 90% 75%;
+    --primary-dark: 258 90% 55%;
 
-    /* Secondary Colors - Sage Green for Sustainability */
-    --secondary: 150 25% 85%;
-    --secondary-foreground: 150 40% 25%;
-    --secondary-accent: 150 40% 65%;
+    /* Secondary Colors - Electric Blue */
+    --secondary: 200 98% 65%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-accent: 200 98% 75%;
 
     /* Muted Tones */
-    --muted: 210 15% 92%;
-    --muted-foreground: 215 15% 55%;
+    --muted: 220 15% 93%;
+    --muted-foreground: 225 15% 50%;
 
-    /* Accent Colors - Coral for Innovation */
-    --accent: 15 85% 65%;
+    /* Accent Colors - Vibrant Pink */
+    --accent: 326 85% 65%;
     --accent-foreground: 0 0% 100%;
-    --accent-soft: 15 60% 90%;
+    --accent-soft: 326 60% 93%;
 
     /* Success & Trust Colors */
-    --success: 150 65% 45%;
+    --success: 142 71% 45%;
     --success-foreground: 0 0% 100%;
 
     /* Warning & Attention */
-    --warning: 45 95% 55%;
-    --warning-foreground: 45 25% 15%;
+    --warning: 43 96% 56%;
+    --warning-foreground: 43 25% 15%;
 
     /* Destructive */
     --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 100%;
 
     /* Border & Input */
-    --border: 215 20% 88%;
-    --input: 215 20% 88%;
-    --ring: 215 85% 45%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 258 90% 66%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(215 85% 45%), hsl(215 85% 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(150 40% 65%), hsl(150 25% 85%));
-    --gradient-accent: linear-gradient(135deg, hsl(15 85% 65%), hsl(15 60% 75%));
-    --gradient-hero: linear-gradient(135deg, hsl(215 85% 45%) 0%, hsl(150 40% 65%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(210 15% 96%) 100%);
+    /* Modern Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(258 90% 66%), hsl(326 85% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(200 98% 65%), hsl(258 90% 75%));
+    --gradient-accent: linear-gradient(135deg, hsl(326 85% 65%), hsl(43 96% 56%));
+    --gradient-hero: linear-gradient(135deg, hsl(258 90% 66%) 0%, hsl(200 98% 65%) 50%, hsl(326 85% 65%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 15% 97%) 0%, hsl(220 15% 95%) 100%);
+    --gradient-navbar: linear-gradient(90deg, hsl(258 90% 66%) 0%, hsl(200 98% 65%) 100%);
 
-    /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(215 25% 27% / 0.08);
-    --shadow-medium: 0 8px 30px hsl(215 25% 27% / 0.12);
-    --shadow-strong: 0 15px 50px hsl(215 25% 27% / 0.15);
-    --shadow-accent: 0 8px 25px hsl(15 85% 65% / 0.25);
+    /* Enhanced Shadows */
+    --shadow-soft: 0 4px 20px hsl(258 90% 66% / 0.08);
+    --shadow-medium: 0 8px 30px hsl(258 90% 66% / 0.15);
+    --shadow-strong: 0 15px 50px hsl(258 90% 66% / 0.20);
+    --shadow-accent: 0 8px 25px hsl(326 85% 65% / 0.25);
+    --shadow-glow: 0 0 40px hsl(258 90% 66% / 0.3);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

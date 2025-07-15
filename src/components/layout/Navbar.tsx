@@ -21,67 +21,80 @@ export default function Navbar() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm shadow-soft z-50 border-b border-border">
-      {/* Top Bar */}
-      <div className="bg-primary text-primary-foreground py-2">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 w-full bg-gradient-navbar shadow-glow z-50 backdrop-blur-md">
+      {/* Animated Top Bar with Gradient */}
+      <div className="bg-gradient-primary/90 text-white py-3 overflow-hidden relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-[slide-in-right_3s_ease-in-out_infinite]"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex justify-between items-center text-sm">
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2">
-                <Phone size={14} />
-                <span>+91-161-2345678</span>
+            <div className="flex items-center space-x-6 animate-fade-in">
+              <div className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300">
+                <Phone size={14} className="animate-pulse" />
+                <span className="font-medium">+91-161-2345678</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Mail size={14} />
-                <span>enquire@mercuryfabrics.com</span>
+              <div className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300">
+                <Mail size={14} className="animate-pulse" />
+                <span className="font-medium">enquire@mercuryfabrics.com</span>
               </div>
             </div>
             <div className="hidden md:block">
-              <span>Knitting Innovation. Weaving Trust.</span>
+              <span className="text-white/90 font-semibold tracking-wide animate-fade-in">
+                ✨ Knitting Innovation. Weaving Trust. ✨
+              </span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Main Navigation */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Main Navigation with Glass Effect */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white/80 backdrop-blur-xl border-b border-white/20">
         <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">M</span>
+          {/* Animated Logo */}
+          <Link to="/" className="flex items-center space-x-3 group">
+            <div className="relative w-14 h-14 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow group-hover:scale-110 transition-all duration-500 animate-float">
+              <span className="text-white font-bold text-2xl drop-shadow-lg">M</span>
+              <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-30 rounded-2xl transition-opacity duration-500"></div>
             </div>
-            <div>
-              <h1 className="text-xl font-bold text-foreground">Mercury Fabrics</h1>
-              <p className="text-xs text-muted-foreground">Est. 2003</p>
+            <div className="group-hover:scale-105 transition-transform duration-300">
+              <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+                Mercury Fabrics
+              </h1>
+              <p className="text-sm text-muted-foreground font-medium">Est. 2003 • Premium Textiles</p>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
-            {navigation.map((item) => (
+          {/* Futuristic Desktop Navigation */}
+          <div className="hidden lg:flex items-center space-x-2">
+            {navigation.map((item, index) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`relative text-sm font-medium transition-colors duration-300 hover:text-primary ${
+                className={`relative px-4 py-2 text-sm font-semibold rounded-full transition-all duration-500 hover:scale-105 animate-fade-in group ${
                   isActive(item.href)
-                    ? "text-primary"
-                    : "text-foreground"
+                    ? "bg-gradient-primary text-white shadow-glow"
+                    : "text-foreground hover:bg-gradient-primary/10 hover:text-primary"
                 }`}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {item.name}
+                <span className="relative z-10">{item.name}</span>
                 {isActive(item.href) && (
-                  <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full animate-scale-in" />
+                  <div className="absolute inset-0 bg-gradient-accent opacity-20 rounded-full animate-pulse" />
+                )}
+                {!isActive(item.href) && (
+                  <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-10 rounded-full transition-opacity duration-500" />
                 )}
               </Link>
             ))}
           </div>
 
-          {/* CTA Button */}
+          {/* Glowing CTA Button */}
           <div className="hidden lg:block">
-            <Button variant="hero" size="default" asChild>
-              <Link to="/contact">Get Quote</Link>
-            </Button>
+            <Link to="/contact">
+              <button className="relative px-6 py-3 bg-gradient-accent text-white font-bold rounded-full shadow-glow hover:scale-110 hover:shadow-strong transition-all duration-500 animate-pulse">
+                <span className="relative z-10">Get Quote ✨</span>
+                <div className="absolute inset-0 bg-gradient-primary opacity-0 hover:opacity-30 rounded-full transition-opacity duration-500"></div>
+              </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
