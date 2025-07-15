@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import AnimatedSection from "@/components/ui/AnimatedSection";
@@ -56,15 +57,15 @@ const features = [
 
 export default function Home() {
   return (
-    <div className="overflow-hidden bg-white text-foreground">
+    <div className="overflow-hidden bg-background text-foreground">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-hero text-primary-foreground">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-in-up" delay={200}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Knitting Innovation.<br />
-              <span className="text-accent-soft">Weaving Trust.</span>
+              Innovation in Every Stitch. <br />
+              <span className="text-accent-soft">Trust in Every Thread.</span>
             </h1>
           </AnimatedSection>
           
@@ -90,58 +91,12 @@ export default function Home() {
           </AnimatedSection>
         </div>
 
-        {/* Floating Animation */}
+        {/* Floating Animation
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-float">
           <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
           </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection animation="fade-in-up">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Delivering Excellence Since 2003
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                From humble beginnings in Ludhiana to becoming a trusted global partner
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => {
-              const Icon = stat.icon;
-              return (
-                <AnimatedSection 
-                  key={stat.label} 
-                  animation="scale-in" 
-                  delay={index * 100}
-                >
-                  <Card className="text-center p-8 hover:shadow-medium transition-all duration-300 border-border">
-                    <CardContent className="p-0">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-primary rounded-2xl mb-4">
-                        <Icon size={32} className="text-primary-foreground" />
-                      </div>
-                      <div className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                        {stat.value}
-                      </div>
-                      <div className="text-sm text-accent font-medium mb-1">
-                        {stat.unit}
-                      </div>
-                      <div className="text-muted-foreground">
-                        {stat.label}
-                      </div>
-                    </CardContent>
-                  </Card>
-                </AnimatedSection>
-              );
-            })}
-          </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Features Section */}
