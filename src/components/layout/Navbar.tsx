@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import logo from "@/assests/logo.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -47,19 +48,25 @@ export default function Navbar() {
       </div> */}
 
       {/* Main Navigation with Glass Effect */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white/80 backdrop-blur-xl border-b border-white/20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white/80 backdrop-blur-xl">
         <div className="flex justify-between items-center py-4">
           {/* Animated Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="relative w-14 h-14 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow group-hover:scale-110 transition-all duration-500 animate-float">
-              <span className="text-white font-bold text-2xl drop-shadow-lg">M</span>
+            <div className="relative w-14 h-14 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow group-hover:scale-110 transition-all duration-500">
+              <img
+                src={logo}
+                alt="Mercury Fabrics Logo"
+                className="h-8 w-auto drop-shadow-lg"
+              />
               <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-30 rounded-2xl transition-opacity duration-500"></div>
             </div>
             <div className="group-hover:scale-105 transition-transform duration-300">
               <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                 Mercury Fabrics
               </h1>
-              <p className="text-sm text-muted-foreground font-medium">Est. 2003 • Premium Textiles</p>
+              <p className="text-sm text-muted-foreground font-medium">
+                Est. 2003 • Premium Textiles
+              </p>
             </div>
           </Link>
 

@@ -56,7 +56,7 @@ const features = [
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-white text-foreground">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-hero text-primary-foreground">
         <div className="absolute inset-0 bg-black/10"></div>
@@ -99,7 +99,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-in-up">
             <div className="text-center mb-16">
@@ -194,7 +194,7 @@ export default function Home() {
       </section>
 
       {/* Clients Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-in-up">
             <div className="text-center mb-16">
