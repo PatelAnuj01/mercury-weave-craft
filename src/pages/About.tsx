@@ -12,6 +12,7 @@ import {
   Globe,
   Heart
 } from "lucide-react";
+import aboutImage from "@/assests/about.jpg";
 
 const milestones = [
   {
@@ -79,21 +80,29 @@ export default function About() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-hero text-primary-foreground">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection animation="fade-in-up">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Our Story of Growth
-              </h1>
-              <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                From a small textile operation in Ludhiana to a global leader in 
-                sustainable fabric manufacturing, our journey spans over seven decades.
-              </p>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+   <section 
+  className="py-20 border-t border-gray-800 text-white relative"
+  style={{ 
+    backgroundImage: `linear-gradient(rgba(26, 42, 68, 0.7), rgba(44, 62, 80, 0.7)), url(${aboutImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}
+>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <AnimatedSection animation="fade-in-up">
+      <div className="text-center">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+          Our Story of Growth
+        </h1>
+        <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          From a small textile operation in Ludhiana to a global leader in 
+          sustainable fabric manufacturing, our journey spans over seven decades.
+        </p>
+      </div>
+    </AnimatedSection>
+  </div>
+</section>
 
       {/* Company Overview */}
       <section className="py-20 bg-background">
