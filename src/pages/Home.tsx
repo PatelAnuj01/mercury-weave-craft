@@ -225,32 +225,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-hero text-primary-foreground">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <AnimatedSection animation="fade-in-up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Partner with Us?
-            </h2>
-            <p className="text-xl mb-8 text-primary-foreground/90">
-              Discover how Mercury Fabrics can elevate your product line with 
-              sustainable, innovative textile solutions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="accent" size="xl" asChild>
-                <Link to="/contact">
-                  Start Your Project
-                  <ArrowRight className="ml-2" size={20} />
-                </Link>
-              </Button>
-              <Button variant="outline" size="xl" className="bg-white/10 border-white/30 text-white hover:bg-white/20" asChild>
-                <Link to="/value-chain">View Our Process</Link>
-              </Button>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
     </div>
   );
 }

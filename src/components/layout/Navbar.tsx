@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full bg-gradient-navbar shadow-glow z-50 backdrop-blur-md">
       {/* Animated Top Bar with Gradient */}
-      <div className="bg-gradient-primary/90 text-white py-3 overflow-hidden relative">
+      {/* <div className="bg-gradient-primary/90 text-white py-3 overflow-hidden relative">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-[slide-in-right_3s_ease-in-out_infinite]"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex justify-between items-center text-sm">
@@ -44,7 +44,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Navigation with Glass Effect */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white/80 backdrop-blur-xl border-b border-white/20">
@@ -86,17 +86,6 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-
-          {/* Glowing CTA Button */}
-          <div className="hidden lg:block">
-            <Link to="/contact">
-              <button className="relative px-6 py-3 bg-gradient-accent text-white font-bold rounded-full shadow-glow hover:scale-110 hover:shadow-strong transition-all duration-500 animate-pulse">
-                <span className="relative z-10">Get Quote ✨</span>
-                <div className="absolute inset-0 bg-gradient-primary opacity-0 hover:opacity-30 rounded-full transition-opacity duration-500"></div>
-              </button>
-            </Link>
-          </div>
-
           {/* Mobile menu button */}
           <div className="lg:hidden">
             <Button
@@ -128,13 +117,6 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <div className="px-3 py-2">
-              <Button variant="hero" size="default" className="w-full" asChild>
-                <Link to="/contact" onClick={() => setIsOpen(false)}>
-                  Get Quote
-                </Link>
-              </Button>
-            </div>
           </div>
         </div>
       )}
