@@ -73,8 +73,10 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
 
-        <div className="absolute inset-0 bg-black/30 z-10"></div>
+        {/* Red Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#9c1c1c]/60 to-[#f24545]/60 z-10 mix-blend-multiply"></div>
 
+        {/* Content */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-in-up" delay={200}>
             <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
@@ -170,7 +172,8 @@ export default function Home() {
                 Why Choose Mercury Fabrics?
               </h2>
               <p className="text-xl text-gray-800 max-w-2xl mx-auto">
-                Combining traditional craftsmanship with modern innovation for superior results
+                Combining traditional craftsmanship with modern innovation for
+                superior results
               </p>
             </div>
           </AnimatedSection>
