@@ -309,6 +309,13 @@ import qualityImage from "../assests/qualityImage.webp";
 import innovationImage from "../assests/innovationImage.webp";
 import partnershipImage from "../assests/partnershipImage.webp";
 
+import hmLogo from "../assests/H&M.jpg";
+import pumaLogo from "../assests/PUMA.jpg";
+import zaralogo from "../assests/ZARA.webp";
+import calogo from "../assests/C&A.png";
+import gaplogo from "../assests/GAP.webp";
+import targetLogo from "../assests/Target.webp";
+
 const stats = [
   { label: "Annual Production", value: "8,400", unit: "tonnes", icon: Factory },
   { label: "Annual Revenue", value: "$40M", unit: "USD", icon: TrendingUp },
@@ -317,12 +324,12 @@ const stats = [
 ];
 
 const clients = [
-  { name: "H&M", logo: "H&M" },
-  { name: "Puma", logo: "PUMA" },
-  { name: "Uniqlo", logo: "UNIQLO" },
-  { name: "M&S", logo: "M&S" },
-  { name: "Birla", logo: "BIRLA" },
-  { name: "Target", logo: "TARGET" },
+  { name: "H&M", logoUrl: hmLogo },
+  { name: "Puma", logoUrl: pumaLogo },
+  { name: "ZARA", logoUrl: zaralogo },
+  { name: "C&A", logoUrl: calogo },
+  { name: "GAP", logoUrl: gaplogo },
+  { name: "Target", logoUrl: targetLogo },
 ];
 
 const features = [
@@ -422,9 +429,10 @@ export default function Home() {
                   alt="Mercury Factory"
                   className="w-full h-full object-cover rounded-2xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#9c1c1c]/20 to-[#f24545]/20 mix-blend-multiply rounded-2xl" />
-                
-              
+                <div className="absolute inset-0 bg-gradient-to-br from-[#9c1c1c]/60 to-[#f24545]/60 mix-blend-multiply rounded-2xl" />
+                <div className="absolute bottom-4 left-4 bg-white/80 text-[#9c1c1c] px-4 py-2 rounded-lg text-sm font-semibold shadow-md">
+                  Vertically Integrated Facility – Bawal, Haryana
+                </div>
               </div>
               {/* Right: Content Section */}
               <div>
@@ -562,10 +570,15 @@ export default function Home() {
                 delay={index * 100}
               >
                 <div className="text-center p-6 hover:scale-105 transition-transform duration-300">
-                  <div className="w-20 h-20 bg-gradient-subtle rounded-2xl flex items-center justify-center mx-auto border border-border shadow-soft">
-                    <span className="font-bold text-lg text-primary">
-                      {client.logo}
-                    </span>
+                  <div 
+                    className="w-20 h-20 mx-auto rounded-2xl flex items-center justify-center border-2 border-[#9c1c1c] shadow-md"
+                   
+                  >
+                    <img 
+                      src={client.logoUrl} 
+                      alt={`${client.name} logo`}
+                      className="max-w-full max-h-full object-contain p-2"
+                    />
                   </div>
                   <p className="text-sm text-muted-foreground mt-2">
                     {client.name}
