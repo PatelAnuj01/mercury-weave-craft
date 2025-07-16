@@ -206,34 +206,33 @@ export default function About() {
                     }`}
                   >
                     {/* Timeline Card */}
-                    <div
-                      className={`w-full md:w-1/2 ${isLeft ? "md:pr-6" : "md:pl-6"}`}
-                    >
-                      <Card className="p-6 shadow-lg border border-border bg-gradient-subtle">
-                        <CardContent className="p-0">
-                          <div
-                            className={`flex items-center ${
-                              isLeft ? "justify-start" : "justify-end"
-                            } space-x-3 mb-3`}
-                          >
-                            <div className="inline-flex items-center justify-center w-10 h-10 bg-[#F0EEE4] rounded-xl">
-                              <Icon size={20} className="text-gradient-subtle" />
-                            </div>
-                            <div className={`${isLeft ? "" : "text-right"}`}>
-                              <div className="text-sm font-medium text-gradient-subtle]">
-                                {milestone.year}
-                              </div>
-                              <h3 className="text-lg font-semibold text-foreground">
-                                {milestone.title}
-                              </h3>
-                            </div>
-                          </div>
-                          <p className="text-muted-foreground">
-                            {milestone.description}
-                          </p>
-                        </CardContent>
-                      </Card>
-                    </div>
+                   <div
+  className={`w-full md:w-1/2 ${isLeft ? "md:pr-6" : "md:pl-6"}`}
+>
+  <Card className="relative p-6 shadow-lg border border-border overflow-hidden rounded-2xl bg-gradient-to-r from-[#9c1c1c] to-[#f24545]">
+    <CardContent className="relative p-0 z-10">
+      <div
+        className={`flex items-center ${
+          isLeft ? "justify-start" : "justify-end"
+        } space-x-3 mb-3`}
+      >
+        <div className="inline-flex items-center justify-center w-10 h-10 bg-[#F0EEE4] rounded-xl">
+          <Icon size={20} className="text-gradient-subtle" />
+        </div>
+        <div className={`${isLeft ? "" : "text-right"}`}>
+          <div className="text-sm font-medium text-white">
+            {milestone.year}
+          </div>
+          <h3 className="text-lg font-semibold text-white">
+            {milestone.title}
+          </h3>
+        </div>
+      </div>
+      <p className="text-white">{milestone.description}</p>
+    </CardContent>
+  </Card>
+</div>
+
 
                     {/* Timeline Dot */}
                     <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-[#F0EEE4] rounded-full border-4 border-background transform md:-translate-x-1/2 z-20"></div>
