@@ -1,13 +1,12 @@
 #root {
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0;
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: 'Poppins', 'Lato', sans-serif;
+  padding: 2rem;
+  text-align: center;
+  background-color: #F5E9D3; /* Tortilla beige */
+  color: #3C2F24; /* Dark earthy brown */
 }
 
-/* Logo styles */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -15,44 +14,13 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em rgba(0, 0, 0, 0.15));
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 0 2em rgba(0, 0, 0, 0.2));
 }
 
-/* Cards */
 .card {
-  padding: 2rem;
-  background-color: var(--card);
-  color: var(--card-foreground);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  transition: var(--transition-smooth);
-}
-.card:hover {
-  box-shadow: var(--shadow-medium);
-  transform: translateY(-4px);
-}
-
-/* Utility Text */
-.read-the-docs {
-  color: var(--muted-foreground);
-}
-
-/* Animations */
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  padding: 2em;
+  background-color: #FFFFFF; /* Clean white */
+  color: #3C2F24; /* Dark earthy brown */
+  border: 1px solid #C8A97E; /* Soft tortilla crust brown */
+  border-radius: 8px;
 }

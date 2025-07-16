@@ -2,100 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Mercury Fabrics Design System - Premium Modern Theme */
+/* Mercury Fabrics Design System - Tortilla Theme */
 
 @layer base {
   :root {
-    --background: #F9F9F9;
-    --foreground: #1C1C1C;
+    /* Tortilla Theme Colors */
+    --background: #F5E9D3;
+    --foreground: #3C2F24;
 
     --card: #FFFFFF;
-    --card-foreground: #1C1C1C;
+    --card-foreground: #3C2F24;
 
-    --primary: #2C3E50;
-    --primary-foreground: #FFFFFF;
+    --primary: #C8A97E;
+    --primary-foreground: #1A1A1A;
 
-    --secondary: #BDC3C7;
-    --secondary-foreground: #2C3E50;
+    --secondary: #DEC8A0;
+    --secondary-foreground: #3C2F24;
 
-    --muted: #EFEFEF;
-    --muted-foreground: #5B5B5B;
+    --muted: #EADDC4;
+    --muted-foreground: #3C2F24;
 
-    --accent: #D4AF37;
+    --accent: #A6794F;
     --accent-foreground: #FFFFFF;
 
-    --link: #A67C00;
-    --hover: #34495E;
+    --border: #C8A97E;
+    --input: #F9F1E3;
+    --ring: #A6794F;
 
-    --border: #BDC3C7;
-    --input: #FFFFFF;
-    --ring: #D4AF37;
+    --gradient-primary: linear-gradient(135deg, #C8A97E, #DEC8A0);
+    --gradient-secondary: linear-gradient(135deg, #F5E9D3, #EADDC4);
+    --gradient-hero: linear-gradient(135deg, #A6794F, #C8A97E);
+    --gradient-subtle: linear-gradient(180deg, #F5E9D3, #EADDC4);
 
-    --gradient-primary: linear-gradient(135deg, #2C3E50, #34495E);
-    --gradient-secondary: linear-gradient(135deg, #BDC3C7, #F9F9F9);
-    --gradient-hero: linear-gradient(135deg, #2C3E50, #D4AF37);
-    --gradient-subtle: linear-gradient(180deg, #F9F9F9, #BDC3C7);
-
-    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
-    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.1);
-    --shadow-strong: 0 15px 50px rgba(0, 0, 0, 0.15);
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.04);
+    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.08);
+    --shadow-strong: 0 15px 50px rgba(0, 0, 0, 0.12);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --radius: 0.75rem;
   }
+}
 
+@layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
-    font-family: 'Poppins', 'Lato', sans-serif;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply text-primary font-bold;
-  }
-
-  section {
-    @apply py-16 px-6 md:px-12;
-  }
-}
-
-/* ✅ Define custom utility classes */
-@layer utilities {
-  .text-link {
-    color: var(--link);
-  }
-
-  .text-link:hover {
-    color: var(--hover);
-  }
-
-  .bg-link {
-    background-color: var(--link);
-  }
-
-  .bg-link:hover {
-    background-color: var(--hover);
-  }
-
-  .shadow-soft {
-    box-shadow: var(--shadow-soft);
-  }
-
-  .shadow-medium {
-    box-shadow: var(--shadow-medium);
-  }
-
-  .shadow-strong {
-    box-shadow: var(--shadow-strong);
-  }
-
-  .gradient-hero {
-    background: var(--gradient-hero);
-  }
-
-  .rounded-xl {
-    border-radius: var(--radius);
+    @apply bg-background text-foreground;
   }
 }
