@@ -2,52 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Mercury Fabrics Design System - Tortilla Theme */
+/* Mercury Fabrics Design System - Earthy Warm Theme */
 
 @layer base {
   :root {
-    /* Tortilla Theme Colors */
-    --background: #F5E9D3;
-    --foreground: #3C2F24;
+    /* Base & Text */
+    --background: #F5E9D3;          /* Warm beige */
+    --foreground: #1C1C1C;          /* Charcoal black */
 
-    --card: #FFFFFF;
-    --card-foreground: #3C2F24;
+    --card: #FFFFFF;                /* Crisp white */
+    --card-foreground: #1C1C1C;
 
-    --primary: #C8A97E;
-    --primary-foreground: #1A1A1A;
+    --primary: #708238;             /* Olive green */
+    --primary-foreground: #FFFFFF;
 
-    --secondary: #DEC8A0;
-    --secondary-foreground: #3C2F24;
+    --secondary: #B4A57B;           /* Muted olive */
+    --secondary-foreground: #1C1C1C;
 
-    --muted: #EADDC4;
-    --muted-foreground: #3C2F24;
+    --muted: #D3C6A3;               /* Soft sand beige */
+    --muted-foreground: #1C1C1C;
 
-    --accent: #A6794F;
+    --accent: #D4A373;              /* Terracotta */
     --accent-foreground: #FFFFFF;
 
-    --border: #C8A97E;
-    --input: #F9F1E3;
-    --ring: #A6794F;
+    --border: #D4A373;              /* Terracotta */
+    --input: #F5E9D3;               /* Beige background for inputs */
+    --ring: #708238;                /* Olive focus ring */
 
-    --gradient-primary: linear-gradient(135deg, #C8A97E, #DEC8A0);
-    --gradient-secondary: linear-gradient(135deg, #F5E9D3, #EADDC4);
-    --gradient-hero: linear-gradient(135deg, #A6794F, #C8A97E);
-    --gradient-subtle: linear-gradient(180deg, #F5E9D3, #EADDC4);
+    --gradient-primary: linear-gradient(135deg, #708238, #B4A57B);
+    --gradient-secondary: linear-gradient(135deg, #F5E9D3, #D3C6A3);
+    --gradient-hero: linear-gradient(135deg, #D4A373, #708238);
+    --gradient-subtle: linear-gradient(180deg, #F5E9D3, #D3C6A3);
 
-    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.04);
-    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.08);
-    --shadow-strong: 0 15px 50px rgba(0, 0, 0, 0.12);
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.1);
+    --shadow-strong: 0 15px 50px rgba(0, 0, 0, 0.15);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --radius: 0.75rem;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
   }
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  * {
+    @apply border-border;
   }
 }

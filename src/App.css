@@ -3,8 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #F5E9D3; /* Tortilla beige */
-  color: #3C2F24; /* Dark earthy brown */
+  background-color: #F5E9D3; /* Warm beige */
+  color: #1C1C1C; /* Charcoal black */
 }
 
 .logo {
@@ -14,13 +14,13 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 0 2em rgba(0, 0, 0, 0.2)); /* Soft black shadow */
 }
 
 .card {
   padding: 2em;
-  background-color: #FFFFFF; /* Clean white */
-  color: #3C2F24; /* Dark earthy brown */
-  border: 1px solid #C8A97E; /* Soft tortilla crust brown */
+  background-color: #FFFFFF; /* Pure white for clarity */
+  color: #1C1C1C; /* Black text */
+  border: 1px solid #D4A373; /* Terracotta border */
   border-radius: 8px;
 }
