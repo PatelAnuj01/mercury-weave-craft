@@ -105,71 +105,88 @@ export default function About() {
 </section>
 
       {/* Company Overview */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <AnimatedSection animation="fade-in-up">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  Mercury Fabrics: A Legacy of Excellence
-                </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>
-                    Founded in the heart of India's textile hub, Mercury Fabrics has grown from 
-                    humble beginnings in the 1950s to become a premier manufacturer of innovative 
-                    knitted fabrics. Our journey is one of continuous evolution, driven by a 
-                    commitment to quality, sustainability, and customer satisfaction.
-                  </p>
-                  <p>
-                    Today, we operate state-of-the-art facilities that combine traditional 
-                    craftsmanship with cutting-edge technology. Our comprehensive value chain 
-                    ensures complete control over quality while maintaining the flexibility to 
-                    meet diverse customer requirements.
-                  </p>
-                  <p>
-                    With annual production capacity of 8,400 tonnes and revenue of $40M, we serve 
-                    over 50 global clients including industry leaders like H&M, Puma, and Uniqlo. 
-                    Our success is built on trust, innovation, and an unwavering commitment to 
-                    sustainable manufacturing practices.
-                  </p>
-                </div>
-                <div className="mt-8">
-                  <Button variant="default" size="lg" asChild>
-                    <Link to="/value-chain">Explore Our Process</Link>
-                  </Button>
-                </div>
-              </div>
-            </AnimatedSection>
+      <Card className="p-10 rounded-2xl shadow-2xl border border-red-800/40 bg-white/90 backdrop-blur-lg relative overflow-hidden">
+     <section className="relative py-24 bg-background overflow-hidden">
+  {/* Decorative Gradient Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-br from-[#9c1c1c]/30 to-[#f24545]/30 mix-blend-multiply rounded-2xl"></div>
 
-            <AnimatedSection animation="slide-in-right" delay={200}>
-              <div className="relative">
-                <Card className="p-8 shadow-strong border-border">
-                  <CardContent className="p-0">
-                    <div className="grid grid-cols-2 gap-6">
-                      <div className="text-center">
-                        <div className="text-3xl font-bold text-primary mb-2">21+</div>
-                        <div className="text-sm text-muted-foreground">Years Incorporated</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-3xl font-bold text-primary mb-2">8,400</div>
-                        <div className="text-sm text-muted-foreground">Tonnes/Year</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-3xl font-bold text-primary mb-2">$40M</div>
-                        <div className="text-sm text-muted-foreground">Annual Revenue</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                        <div className="text-sm text-muted-foreground">Global Clients</div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </AnimatedSection>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      
+      {/* Text Section */}
+      <AnimatedSection animation="fade-in-up">
+        <div>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6 leading-tight">
+            Mercury Fabrics: A Legacy of Excellence
+          </h2>
+          <div className="space-y-5 text-muted-foreground leading-relaxed text-lg">
+            <p>
+              Founded in the heart of India's textile hub, Mercury Fabrics has grown from 
+              humble beginnings in the 1950s to become a premier manufacturer of innovative 
+              knitted fabrics. Our journey is one of continuous evolution, driven by a 
+              commitment to quality, sustainability, and customer satisfaction.
+            </p>
+            <p>
+              Today, we operate state-of-the-art facilities that combine traditional 
+              craftsmanship with cutting-edge technology. Our comprehensive value chain 
+              ensures complete control over quality while maintaining the flexibility to 
+              meet diverse customer requirements.
+            </p>
+            <p>
+              With annual production capacity of 8,400 tonnes and revenue of $40M, we serve 
+              over 50 global clients including industry leaders like H&M, Puma, and Uniqlo. 
+              Our success is built on trust, innovation, and an unwavering commitment to 
+              sustainable manufacturing practices.
+            </p>
+          </div>
+          <div className="mt-8">
+            <Button
+              variant="default"
+              size="lg"
+              className="bg-[#f24545] hover:bg-[#9c1c1c] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl px-6 py-3 text-lg"
+              asChild
+            >
+              <Link to="/value-chain">Explore Our Process</Link>
+            </Button>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
+
+      {/* Card Section */}
+      <AnimatedSection animation="slide-in-right" delay={200}>
+        <div className="relative">
+          <Card className="p-10 rounded-2xl shadow-2xl border border-red-300/40 bg-white/90 backdrop-blur-lg relative overflow-hidden">
+            {/* Gradient Accent Layer */}
+            <div className="absolute inset-0 bg-gradient-to-br from-[#f24545]/10 to-[#9c1c1c]/10 rounded-2xl mix-blend-multiply"></div>
+            <CardContent className="relative z-10 p-0">
+              <div className="grid grid-cols-2 gap-8">
+                <div className="text-center">
+                  <div className="text-4xl font-extrabold text-[#f24545] mb-2">21+</div>
+                  <div className="text-base text-gray-700 font-medium">Years Incorporated</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-extrabold text-[#f24545] mb-2">8,400</div>
+                  <div className="text-base text-gray-700 font-medium">Tonnes/Year</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-extrabold text-[#f24545] mb-2">$40M</div>
+                  <div className="text-base text-gray-700 font-medium">Annual Revenue</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-extrabold text-[#f24545] mb-2">50+</div>
+                  <div className="text-base text-gray-700 font-medium">Global Clients</div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </AnimatedSection>
+    </div>
+  </div>
+
+</section>
+  </Card>
+
 
       {/* Timeline */}
       <section className="py-20 bg-background">
