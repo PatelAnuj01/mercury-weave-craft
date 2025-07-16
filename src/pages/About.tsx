@@ -83,7 +83,7 @@ export default function About() {
    <section 
   className="py-20 border-t border-gray-800 text-white relative"
   style={{ 
-    backgroundImage: `linear-gradient(rgba(26, 42, 68, 0.7), rgba(44, 62, 80, 0.7)), url(${aboutImage})`,
+    backgroundImage: `linear-gradient(rgba(33, 13, 13, 0.7), rgba(33, 13, 13, 0.7)), url(${aboutImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat'
