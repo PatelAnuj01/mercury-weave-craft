@@ -422,10 +422,9 @@ export default function Home() {
                   alt="Mercury Factory"
                   className="w-full h-full object-cover rounded-2xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#9c1c1c]/60 to-[#f24545]/60 mix-blend-multiply rounded-2xl" />
-                <div className="absolute bottom-4 left-4 bg-white/80 text-[#9c1c1c] px-4 py-2 rounded-lg text-sm font-semibold shadow-md">
-                  Vertically Integrated Facility – Bawal, Haryana
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#9c1c1c]/20 to-[#f24545]/20 mix-blend-multiply rounded-2xl" />
+                
+              
               </div>
               {/* Right: Content Section */}
               <div>
