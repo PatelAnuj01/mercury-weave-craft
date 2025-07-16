@@ -172,65 +172,79 @@ export default function About() {
       </section>
 
       {/* Timeline */}
-      <section className="py-20 bg-gradient-subtle">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection animation="fade-in-up">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Our Journey Through Time
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Key milestones that shaped Mercury Fabrics into the industry leader we are today
-              </p>
-            </div>
-          </AnimatedSection>
+      <section className="py-20 bg-background">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedSection animation="fade-in-up">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Our Journey Through Time
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Key milestones that shaped Mercury Fabrics into the industry leader we are today
+            </p>
+          </div>
+        </AnimatedSection>
 
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary transform md:-translate-x-1/2"></div>
+        <div className="relative">
+          {/* Vertical line */}
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-[#F0EEE4] md:-translate-x-1/2 z-0"></div>
 
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => {
-                const Icon = milestone.icon;
-                const isEven = index % 2 === 0;
+          <div className="space-y-16 relative z-10">
+            {milestones.map((milestone, index) => {
+              const Icon = milestone.icon;
+              const isLeft = index % 2 === 0;
 
-                return (
-                  <AnimatedSection 
-                    key={milestone.year} 
-                    animation="fade-in-up" 
-                    delay={index * 100}
+              return (
+                <AnimatedSection
+                  key={milestone.year}
+                  animation="fade-in-up"
+                  delay={index * 150}
+                >
+                  <div
+                    className={`flex flex-col md:flex-row items-center ${
+                      isLeft ? "" : "md:flex-row-reverse"
+                    }`}
                   >
-                    <div className={`flex items-center ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                      {/* Content */}
-                      <div className={`flex-1 ${isEven ? 'md:pr-8' : 'md:pl-8'}`}>
-                        <Card className={`p-6 shadow-medium border-border ml-12 md:ml-0 ${!isEven ? 'md:text-right' : ''}`}>
-                          <CardContent className="p-0">
-                            <div className="flex items-center space-x-3 mb-3">
-                              <div className={`inline-flex items-center justify-center w-10 h-10 bg-gradient-primary rounded-xl ${!isEven ? 'md:order-2' : ''}`}>
-                                <Icon size={20} className="text-primary-foreground" />
-                              </div>
-                              <div className={`${!isEven ? 'md:order-1' : ''}`}>
-                                <div className="text-sm font-medium text-primary">{milestone.year}</div>
-                                <h3 className="text-lg font-semibold text-foreground">{milestone.title}</h3>
-                              </div>
+                    {/* Timeline Card */}
+                    <div
+                      className={`w-full md:w-1/2 ${isLeft ? "md:pr-6" : "md:pl-6"}`}
+                    >
+                      <Card className="p-6 shadow-lg border border-border">
+                        <CardContent className="p-0">
+                          <div
+                            className={`flex items-center ${
+                              isLeft ? "justify-start" : "justify-end"
+                            } space-x-3 mb-3`}
+                          >
+                            <div className="inline-flex items-center justify-center w-10 h-10 bg-[#F0EEE4] rounded-xl">
+                              <Icon size={20} className="text-white" />
                             </div>
-                            <p className="text-muted-foreground">
-                              {milestone.description}
-                            </p>
-                          </CardContent>
-                        </Card>
-                      </div>
-
-                      {/* Timeline Dot */}
-                      <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-primary rounded-full transform md:-translate-x-1/2 border-4 border-background"></div>
+                            <div className={`${isLeft ? "" : "text-right"}`}>
+                              <div className="text-sm font-medium text-[#F0EEE4]">
+                                {milestone.year}
+                              </div>
+                              <h3 className="text-lg font-semibold text-foreground">
+                                {milestone.title}
+                              </h3>
+                            </div>
+                          </div>
+                          <p className="text-muted-foreground">
+                            {milestone.description}
+                          </p>
+                        </CardContent>
+                      </Card>
                     </div>
-                  </AnimatedSection>
-                );
-              })}
-            </div>
+
+                    {/* Timeline Dot */}
+                    <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-[#F0EEE4] rounded-full border-4 border-background transform md:-translate-x-1/2 z-20"></div>
+                  </div>
+                </AnimatedSection>
+              );
+            })}
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Values Section */}
       <section className="py-20 bg-background">
