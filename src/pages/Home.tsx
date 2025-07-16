@@ -165,11 +165,11 @@ export default function Home() {
       <section className="py-20 bg-gradient-subtle">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-in-up">
-            <div className="text-center mb-16 bg-gradient-to-b from-[#1A2A44] to-[#2C3E50] border-t border-gray-800 py-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
                 Why Choose Mercury Fabrics?
               </h2>
-              <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-800 max-w-2xl mx-auto">
                 Combining traditional craftsmanship with modern innovation for superior results
               </p>
             </div>

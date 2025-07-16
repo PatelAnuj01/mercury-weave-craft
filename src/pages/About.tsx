@@ -209,7 +209,7 @@ export default function About() {
                     <div
                       className={`w-full md:w-1/2 ${isLeft ? "md:pr-6" : "md:pl-6"}`}
                     >
-                      <Card className="p-6 shadow-lg border border-border">
+                      <Card className="p-6 shadow-lg border border-border bg-gradient-subtle">
                         <CardContent className="p-0">
                           <div
                             className={`flex items-center ${
@@ -217,10 +217,10 @@ export default function About() {
                             } space-x-3 mb-3`}
                           >
                             <div className="inline-flex items-center justify-center w-10 h-10 bg-[#F0EEE4] rounded-xl">
-                              <Icon size={20} className="text-white" />
+                              <Icon size={20} className="text-gradient-subtle" />
                             </div>
                             <div className={`${isLeft ? "" : "text-right"}`}>
-                              <div className="text-sm font-medium text-[#F0EEE4]">
+                              <div className="text-sm font-medium text-gradient-subtle]">
                                 {milestone.year}
                               </div>
                               <h3 className="text-lg font-semibold text-foreground">
@@ -292,7 +292,7 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-hero text-primary-foreground">
+      <section className="py-20 text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -302,14 +302,7 @@ export default function About() {
               Partner with Mercury Fabrics and become part of our continuing journey 
               of innovation, quality, and sustainable growth.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="accent" size="xl" asChild>
-                <Link to="/contact">Start Partnership</Link>
-              </Button>
-              <Button variant="outline" size="xl" className="bg-white/10 border-white/30 text-white hover:bg-white/20" asChild>
-                <Link to="/products">View Products</Link>
-              </Button>
-            </div>
+      
           </AnimatedSection>
         </div>
       </section>
