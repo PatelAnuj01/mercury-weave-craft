@@ -88,11 +88,11 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm text-red-100">
                 <MapPin size={16} />
-                <span>Ludhiana, Punjab, India</span>
+                <span>Dist. Rewari, Haryana(India)</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-red-100">
                 <Phone size={16} />
-                <span>+91-161-2345678</span>
+                <span>+91-11-41709800</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-red-100">
                 <Mail size={16} />
