@@ -117,7 +117,7 @@ export default function About() {
       <AnimatedSection animation="fade-in-up">
         <div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6 leading-tight">
-            Mercury Fabrics: A Legacy of Excellence
+            Mercury Fabrics : <br></br>A Legacy of Excellence
           </h2>
           <div className="space-y-5 text-muted-foreground leading-relaxed text-lg">
             <p>
