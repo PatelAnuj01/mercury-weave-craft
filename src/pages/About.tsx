@@ -13,6 +13,7 @@ import {
   Heart
 } from "lucide-react";
 import aboutImage from "@/assests/about.jpg";
+import relative from "@/assests/image.png"        
 
 const milestones = [
   {
@@ -117,7 +118,7 @@ export default function About() {
       <AnimatedSection animation="fade-in-up">
         <div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6 leading-tight">
-            Mercury Fabrics : <br></br>A Legacy of Excellence
+            Mercury Fabrics: <br></br>A Legacy of Excellence
           </h2>
           <div className="space-y-5 text-muted-foreground leading-relaxed text-lg">
             <p>
@@ -143,7 +144,7 @@ export default function About() {
             <Button
               variant="default"
               size="lg"
-              className="bg-[#f24545] hover:bg-[#9c1c1c] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl px-6 py-3 text-lg"
+              className="bg-gradient-to-br from-[#9c1c1c] via-[#b32d2d] to-[#f24545]"
               asChild
             >
               <Link to="/value-chain">Explore Our Process</Link>
@@ -202,68 +203,82 @@ export default function About() {
           </div>
         </AnimatedSection>
 
-        <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-[#F0EEE4] md:-translate-x-1/2 z-0"></div>
+       <div className="relative">
+  {/* Vertical line */}
+  <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-[#F0EEE4] md:-translate-x-1/2 z-0"></div>
 
-          <div className="space-y-16 relative z-10">
-            {milestones.map((milestone, index) => {
-              const Icon = milestone.icon;
-              const isLeft = index % 2 === 0;
+  <div className="space-y-16 relative z-10">
+    {milestones.map((milestone, index) => {
+      const Icon = milestone.icon;
+      const isLeft = index % 2 === 0;
 
-              return (
-                <AnimatedSection
-                  key={milestone.year}
-                  animation="fade-in-up"
-                  delay={index * 150}
-                >
+      return (
+        <AnimatedSection
+          key={milestone.year}
+          animation="fade-in-up"
+          delay={index * 150}
+        >
+          <div
+            className={`flex flex-col md:flex-row items-center ${
+              isLeft ? "" : "md:flex-row-reverse"
+            }`}
+          >
+            {/* Timeline Card */}
+            <div
+              className={`w-full md:w-1/2 ${isLeft ? "md:pr-6" : "md:pl-6"}`}
+            >
+              <Card className="relative p-6 shadow-lg border border-border overflow-hidden rounded-2xl bg-gradient-to-r from-[#9c1c1c] to-[#f24545]">
+                <CardContent className="relative p-0 z-10">
                   <div
-                    className={`flex flex-col md:flex-row items-center ${
-                      isLeft ? "" : "md:flex-row-reverse"
-                    }`}
+                    className={`flex items-center ${
+                      isLeft ? "justify-start" : "justify-end"
+                    } space-x-3 mb-3`}
                   >
-                    {/* Timeline Card */}
-                   <div
-  className={`w-full md:w-1/2 ${isLeft ? "md:pr-6" : "md:pl-6"}`}
->
-  <Card className="relative p-6 shadow-lg border border-border overflow-hidden rounded-2xl bg-gradient-to-r from-[#9c1c1c] to-[#f24545]">
-    <CardContent className="relative p-0 z-10">
-      <div
-        className={`flex items-center ${
-          isLeft ? "justify-start" : "justify-end"
-        } space-x-3 mb-3`}
-      >
-        <div className="inline-flex items-center justify-center w-10 h-10 bg-[#F0EEE4] rounded-xl">
-          <Icon size={20} className="text-gradient-subtle" />
-        </div>
-        <div className={`${isLeft ? "" : "text-right"}`}>
-          <div className="text-sm font-medium text-white">
-            {milestone.year}
+                    <div className="inline-flex items-center justify-center w-10 h-10 bg-[#F0EEE4] rounded-xl">
+                      <Icon size={20} className="text-gradient-subtle" />
+                    </div>
+                    <div className={`${isLeft ? "" : "text-right"}`}>
+                      <div className="text-sm font-medium text-white">
+                        {milestone.year}
+                      </div>
+                      <h3 className="text-lg font-semibold text-white">
+                        {milestone.title}
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-white">{milestone.description}</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Image Side */}
+            <div
+              className={`w-full md:w-1/2 flex justify-center mt-6 md:mt-0 ${
+                isLeft ? "md:pl-6" : "md:pr-6"
+              }`}
+            >
+              <img
+              src={relative}
+                alt="milestone"
+                className="max-h-80 rounded-xl shadow-md object-cover"
+              />
+            </div>
+
+            {/* Timeline Dot */}
+            <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-[#F0EEE4] rounded-full border-4 border-background transform md:-translate-x-1/2 z-20"></div>
           </div>
-          <h3 className="text-lg font-semibold text-white">
-            {milestone.title}
-          </h3>
-        </div>
-      </div>
-      <p className="text-white">{milestone.description}</p>
-    </CardContent>
-  </Card>
+        </AnimatedSection>
+      );
+    })}
+  </div>
 </div>
 
-
-                    {/* Timeline Dot */}
-                    <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-[#F0EEE4] rounded-full border-4 border-background transform md:-translate-x-1/2 z-20"></div>
-                  </div>
-                </AnimatedSection>
-              );
-            })}
-          </div>
-        </div>
       </div>
     </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-background">
+      
+      <section className="py-20 bg-background bg-gray-100 backdrop-blur-lg text-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-in-up">
             <div className="text-center mb-16">
@@ -276,20 +291,20 @@ export default function About() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white/90 backdrop-blur-lg p-8 rounded-2xl ">
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
                 <AnimatedSection 
                   key={value.title} 
                   animation="scale-in" 
-                  delay={index * 150}
+                  delay={index * 250}
                 >
-                  <Card className="p-8 hover:shadow-medium transition-all duration-300 border-border">
+                  <Card className="p-8 hover:shadow-medium transition-all duration-300 border-border bg-gray-50">
                     <CardContent className="p-0">
                       <div className="text-center">
-                        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-secondary rounded-2xl mb-4">
-                          <Icon size={32} className="text-secondary-foreground" />
+                        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#9c1c1c] via-[#b32d2d] to-[#f24545] rounded-2xl mb-4">
+                          <Icon size={32} className="text-secondary-foreground " />
                         </div>
                         <h3 className="text-xl font-semibold text-foreground mb-3">
                           {value.title}
