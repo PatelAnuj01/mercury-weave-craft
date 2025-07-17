@@ -309,12 +309,12 @@ import qualityImage from "../assests/qualityImage.webp";
 import innovationImage from "../assests/innovationImage.webp";
 import partnershipImage from "../assests/partnershipImage.webp";
 
-import hmLogo from "../assests/H&M.jpg";
-import pumaLogo from "../assests/PUMA.jpg";
-import zaralogo from "../assests/ZARA.webp";
+import hmLogo from "../assests/H&M.png";
+import pumaLogo from "../assests/PUMA.png";
+import zaralogo from "../assests/ZARA.png";
 import calogo from "../assests/C&A.png";
-import gaplogo from "../assests/GAP.webp";
-import targetLogo from "../assests/Target.webp";
+import gaplogo from "../assests/GAP.png";
+import targetLogo from "../assests/Target.png";
 
 const stats = [
   { label: "Annual Production", value: "8,400", unit: "tonnes", icon: Factory },
@@ -429,7 +429,6 @@ export default function Home() {
                   alt="Mercury Factory"
                   className="w-full h-full object-cover rounded-2xl"
                 />
-                
               </div>
               {/* Right: Content Section */}
               <div>
@@ -546,7 +545,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Clients Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-in-up">
@@ -559,6 +557,7 @@ export default function Home() {
               </p>
             </div>
           </AnimatedSection>
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
             {clients.map((client, index) => (
               <AnimatedSection
@@ -567,14 +566,11 @@ export default function Home() {
                 delay={index * 100}
               >
                 <div className="text-center p-6 hover:scale-105 transition-transform duration-300">
-                  <div 
-                    className="w-20 h-20 mx-auto rounded-2xl flex items-center justify-center border-2 border-[#9c1c1c] shadow-md"
-                   
-                  >
-                    <img 
-                      src={client.logoUrl} 
+                  <div className="w-[120px] h-[80px] mx-auto rounded-2xl flex items-center justify-center border-2 border-[#9c1c1c] shadow-md bg-white">
+                    <img
+                      src={client.logoUrl}
                       alt={`${client.name} logo`}
-                      className="max-w-full max-h-full object-contain p-2"
+                      className="w-full h-full object-contain p-2"
                     />
                   </div>
                   <p className="text-sm text-muted-foreground mt-2">
