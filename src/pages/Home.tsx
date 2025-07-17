@@ -305,8 +305,8 @@ import {
 import Video from "../assests/back.mp4";
 import companyImage from "../assests/comany profile.png";
 import sustainableImage from "../assests/sustainableImage.webp";
-import qualityImage from "../assests/qualityImage.webp";
-import innovationImage from "../assests/innovationImage.webp";
+import qualityImage from "../assests/qualityImage.jpg";
+import innovationImage from "../assests/innovationImage.jpg";
 import partnershipImage from "../assests/partnershipImage.webp";
 
 import hmLogo from "../assests/H&M.png";
